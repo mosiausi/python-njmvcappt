@@ -36,6 +36,7 @@ def job():
                 message = 'KNOWLEDGE TESTING: '+locationname_arr[i]+' / ('+location+') : '+date_string
                 print(message)
                 os.system('signal-cli -u +44123456789 send -m "DMV Appoitment Available" +44123456789')
+                print('Signal sent!')
                 found = 1
         i = i+1
 
