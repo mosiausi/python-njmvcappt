@@ -3,21 +3,11 @@ import re
 import time
 from bs4 import BeautifulSoup
 from datetime import datetime
-# import beep
 
 location_arr = ['238', '243', '242', '232', '237', '235', '240', '239', '241', '251']
 locationname_arr = ['Eatontown', 'Freehold', 'Toms River', 'Bakers Basin', 'Delanco', 'Camden', 'Edison', 'South Plainfield', 'Flemington', 'West Deptford']
 base_url_link = 'https://telegov.njportal.com/njmvc/AppointmentWizard/17/'
 required_months = ['November', 'December', 'January']
-
-
-# def beep():
-   # Beep(1500, 500)
-   # Beep(4500, 500)
-   # Beep(2500, 500)
-   # Beep(1500, 500)
-   # Beep(4500, 500)
-   # Beep(2500, 500)
 
 
 def job():
@@ -44,7 +34,7 @@ def job():
                 date_string = re.sub(':', '', date_string)
                 message = 'KNOWLEDGE TESTING: '+locationname_arr[i]+' / ('+location+') : '+date_string
                 print(message)
-                # beep()
+                execfile('signal-bot.sh')
                 found = 1
         i = i+1
 
