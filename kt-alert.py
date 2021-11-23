@@ -1,6 +1,7 @@
 import urllib.request
 import re
 import time
+import os
 from bs4 import BeautifulSoup
 from datetime import datetime
 
@@ -34,7 +35,7 @@ def job():
                 date_string = re.sub(':', '', date_string)
                 message = 'KNOWLEDGE TESTING: '+locationname_arr[i]+' / ('+location+') : '+date_string
                 print(message)
-                execfile('signal-bot.sh')
+                os.system('signal-cli -u +44123456789 send -m "DMV Appoitment Available" +44123456789')
                 found = 1
         i = i+1
 
