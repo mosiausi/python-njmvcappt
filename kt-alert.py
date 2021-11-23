@@ -26,7 +26,6 @@ def job():
     print("\n\n\nDate Time: ", dt_string, "\n\n")
     i = 0
     found = 0
-
     for location in location_arr:
         print(location)
         with urllib.request.urlopen(base_url_link+location) as response:
