@@ -1,4 +1,4 @@
-*** This is not for Real ID Appointment ***
+*** This is not for Knowledge Test Appointment ***
 
 Pre-Requisites:
 Install Python and its required libraries
